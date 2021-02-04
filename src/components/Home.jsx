@@ -230,7 +230,7 @@ export default function Home({ session, setSession }) {
                                         Technovore-Hackathon
                                     </h3>
                                     <p>
-                                        Ce sont 72 heures intenses de « coding », au cours desquelles plusieurs équipes de trois (3) personnes ou moins oeuvrent à trouver des solutionsinnovantes à plusieurs problèmes.
+                                        Ce sont 72 heures intenses de « coding », au cours desquelles plusieurs équipes de trois (3) personnes ou moins oeuvrent à trouver des solutions innovantes à plusieurs problèmes.
                                     </p>
                                 </div>
                             </div>
@@ -441,9 +441,13 @@ export default function Home({ session, setSession }) {
                                         type="password"
                                     />
 
+                                    {
+                                        /*
                                     <p className="text-center text-xs text-blue-900 cursor-pointer italic">
                                         Mot de passe oublié ?
-                                        </p>
+                                    </p>
+                                        */
+                                    }
 
                                     <div className="flex justify-between pt-2">
                                         <InputButtonLight onClick={() => {
@@ -673,7 +677,7 @@ export default function Home({ session, setSession }) {
                                     <div className="flex justify-between pt-2">
                                         <InputButtonLight onClick={() => {
                                             setConnexion(false)
-                                        }} name="cas" type="submit" value="S'inscrire" />
+                                        }} type="submit" value="S'inscrire" />
                                         <InputButtonDark type="submit" value="Se connecter" />
                                     </div>
                                 </Form>

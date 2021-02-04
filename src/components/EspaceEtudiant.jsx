@@ -60,7 +60,7 @@ export default function EspaceEtudiant({ session, setSession }) {
 
 
                 <p className="md:w-7/12 text-gray-900 text-center mb-10 font-semibold">
-                    La Semaine De l'Innovation (SDI) aura lieu du Jeudi 25 Février au Lundi 1er Mars 2020. <br />
+                    La Semaine De l'Innovation (SDI) aura lieu du Jeudi 25 Février au Lundi 1er Mars 2021. <br />
                     Vous pouvez participer à la JETIC ou au très reputé Technovore Hackathon
                 </p>
 
@@ -147,6 +147,60 @@ export default function EspaceEtudiant({ session, setSession }) {
                                 console.log(values);
 
                                 values.id_1_membre = session.identifiant
+
+                                //  Vérification du 2eme membre
+                                if (values.id_2_membre !== "" && values.id_2_membre !== "SDI-E") {
+                                    fetch(api_url + "/etudiant/verifEtudiant", {
+                                        "method": "POST",
+                                        "headers": {
+                                            "content-type": "application/json"
+                                        },
+                                        "body": JSON.stringify({
+                                            etudiant: values.id_2_membre
+                                        })
+                                    })
+                                        .then(response => response.json())
+                                        .then(response => {
+
+                                            if (response.success) {
+
+                                            } else {
+
+                                            }
+                                        })
+                                        .catch(err => {
+                                            setJeticErreur(true)
+                                            console.log(err);
+                                        });
+                                }
+
+
+                                if (values.id_3_membre !== "" && values.id_3_membre !== "SDI-E") {
+                                    fetch(api_url + "/etudiant/verifEtudiant", {
+                                        "method": "POST",
+                                        "headers": {
+                                            "content-type": "application/json"
+                                        },
+                                        "body": JSON.stringify({
+                                            etudiant: values.id_3_membre
+                                        })
+                                    })
+                                        .then(response => response.json())
+                                        .then(response => {
+
+                                            if (response.success) {
+                                                
+                                            } else {
+
+                                            }
+                                        })
+                                        .catch(err => {
+                                            setJeticErreur(true)
+                                            console.log(err);
+                                        });
+                                }
+
+
 
                                 fetch(api_url + "/hack/insertParticipant", {
                                     "method": "POST",
