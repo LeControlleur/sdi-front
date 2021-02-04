@@ -26,6 +26,7 @@ import hexagon from '../assets/imgs/hexagon.webp'
 import coding from '../assets/imgs/coding.jpg'
 import bToB from '../assets/imgs/bToB.png'
 import ict_students from '../assets/imgs/ict_students.jpg'
+import img5 from '../assets/imgs/img5.jpg'
 
 
 
@@ -148,7 +149,7 @@ export default function Home({ session, setSession }) {
                 </div>
             </div>
 
-            <div className="grid" id="page" ref={scrollPageRef} style={{ backgroundImage: `url(${hexagon})`, backgroundBlendMode: "multiply", backgroundPosition: "center center", backgroundAttachment: "fixed" }}>
+            <div className="grid" id="page" ref={scrollPageRef} style={{ backgroundImage: `url(${img5})`, backgroundBlendMode: "multiply", backgroundSize: "cover", backgroundRepeat:"no-repeat", backgroundAttachment: "fixed" }}>
                 <div className="w-full bg-no-repeat" style={{ backgroundImage: `url(${backPage})`, backgroundBlendMode: "multiply", backgroundPosition: "center center", backgroundAttachment: "fixed" }}>
                     <div className="p-10 py-20 flex flex-col md:flex-row flex-wrap justify-evenly content-center text-white ">
 

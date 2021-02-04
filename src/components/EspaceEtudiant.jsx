@@ -22,7 +22,7 @@ import { MyTextInput, MyTextArea, ButtonLight, InputButtonDark, MySelect, MyChec
 
 
 import '../assets/css/families.css';
-import enterpriseImage from '../assets/imgs/enterprise.jpg';
+import bienvenue_a_l_esatic from '../assets/imgs/bienvenue_a_l_esatic.jpg';
 
 
 export default function EspaceEtudiant({ session, setSession }) {
@@ -37,7 +37,7 @@ export default function EspaceEtudiant({ session, setSession }) {
 
 
     return (
-        <div style={{ backgroundImage: `url(${enterpriseImage})`, backgroundSize: "cover", minHeight: "100vh", backgroundAttachment: "fixed" }}>
+        <div style={{ backgroundImage: `url(${bienvenue_a_l_esatic})`, backgroundSize: "cover", minHeight: "100vh", backgroundAttachment: "fixed" }}>
 
             <Navbar />
 
@@ -122,7 +122,7 @@ export default function EspaceEtudiant({ session, setSession }) {
                             initialValues={{
                                 "nom_equipe": "",
                                 "niveau_hack": "niveau_1",
-                                "branche_hack": "branche_1",
+                                "branche_hack": "",
                                 "id_1_membre": session.identifiant,
                                 "id_2_membre": "SDI-E",
                                 "id_3_membre": "SDI-E"
@@ -190,13 +190,12 @@ export default function EspaceEtudiant({ session, setSession }) {
                                     <option value="niveau_2">Niveau 2</option>
                                     <option value="niveau_3">Niveau 3</option>
                                 </MySelect>
-                                <MySelect
-                                    label="Branche"
+                                <MyTextInput
+                                    label="Domaine de prédilection"
                                     name="branche_hack"
-                                >
-                                    <option value="branche_1">Branche 1</option>
-                                    <option value="branche_2">Branche 2</option>
-                                </MySelect>
+                                    type="text"
+                                    required={true}
+                                />
                                 <MyTextInput
                                     label="Identifiant du 1er membre"
                                     name="id_1_membre"

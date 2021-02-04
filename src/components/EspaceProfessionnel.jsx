@@ -27,7 +27,7 @@ import { MyTextInput, ButtonLight, ButtonDark, InputButtonDark } from './Form';
 
 
 import '../assets/css/families.css';
-import enterpriseImage from '../assets/imgs/enterprise.jpg';
+import bienvenue_a_l_esatic from '../assets/imgs/bienvenue_a_l_esatic.jpg';
 
 
 export default function EspaceProfessionnel({ session, setSession }) {
@@ -41,7 +41,7 @@ export default function EspaceProfessionnel({ session, setSession }) {
 
 
     return (
-        <div style={{ backgroundImage: `url(${enterpriseImage})`, backgroundSize: "cover", minHeight: "100vh", backgroundAttachment: "fixed" }}>
+        <div style={{ backgroundImage: `url(${bienvenue_a_l_esatic})`, backgroundSize: "cover", minHeight: "100vh", backgroundAttachment: "fixed" }}>
 
             <Navbar />
 
