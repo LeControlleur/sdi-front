@@ -1,0 +1,9 @@
+#backgroudVideo {
+    object-fit: cover;
+    position: fixed;
+    z-index: -100;
+    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
+}

@@ -1,0 +1,31 @@
+.ownMask {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    opacity: 0.2;
+    z-index: -99;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-container {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tab-content {
+    max-height: 0;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
