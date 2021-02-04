@@ -2,19 +2,19 @@
     "short_name": "SDI 2021",
     "name": "Semaine De l'Innovation 2021",
     "icons": [{
-            "src": "logo_sdi.jpeg",
-            "sizes": "1000x534",
+            "src": "logo_sdi.png",
+            "sizes": "1400x748",
             "type": "image/jpg"
         },
         {
-            "src": "logo_sdi.jpeg",
+            "src": "logo_sdi.png",
             "type": "image/jpg",
-            "sizes": "1000x534"
+            "sizes": "1400x748"
         },
         {
-            "src": "logo_sdi.jpeg",
+            "src": "logo_sdi.png",
             "type": "image/jpg",
-            "sizes": "1000x534"
+            "sizes": "1400x748"
         }
     ],
     "start_url": ".",

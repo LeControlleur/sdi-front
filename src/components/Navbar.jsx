@@ -3,6 +3,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignOutAlt, faHiking } from '@fortawesome/free-solid-svg-icons'
 
+import logo_sdi from "../assets/imgs/logo_sdi.png"
 
 
 const deconnexion = () => {
@@ -14,11 +15,9 @@ const deconnexion = () => {
 export default function Navbar() {
     return (
         <div>
-            <nav className="bg-gray-900 h-20 flex flex-row justify-between items-center">
+            <nav className="bg-gray-300 shadow-lg h-20 flex flex-row justify-between items-center">
                 <div>
-                    <h1>
-                        Logo SDI
-                    </h1>
+                    <img src={logo_sdi} alt="Logo de la Semaine De l'Innovation" width="100px" className="ml-4" />
                 </div>
 
 
