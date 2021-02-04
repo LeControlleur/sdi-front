@@ -26,14 +26,6 @@ import hexagon from '../assets/imgs/hexagon.webp'
 import coding from '../assets/imgs/coding.jpg'
 import bToB from '../assets/imgs/bToB.png'
 import ict_students from '../assets/imgs/ict_students.jpg'
-import galleryImg1 from '../assets/imgs/gallery/img1.jpg'
-import galleryImg2 from '../assets/imgs/gallery/img2.jpg'
-import galleryImg3 from '../assets/imgs/gallery/img3.jpg'
-import galleryImg5 from '../assets/imgs/gallery/img5.jpg'
-import galleryImg6 from '../assets/imgs/gallery/img6.jpg'
-import galleryImg7 from '../assets/imgs/gallery/img7.jpg'
-import galleryImg8 from '../assets/imgs/gallery/img8.jpg'
-import galleryImg9 from '../assets/imgs/gallery/img9.jpg'
 
 
 
@@ -101,8 +93,6 @@ export default function Home({ session, setSession }) {
         );
     });
 
-
-    const galleryImgs = [galleryImg1, galleryImg2, galleryImg3, galleryImg5, galleryImg6, galleryImg7, galleryImg8, galleryImg9]
 
     return (
         <div>
