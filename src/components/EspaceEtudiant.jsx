@@ -104,7 +104,7 @@ export default function EspaceEtudiant({ session, setSession }) {
 
             <div className="bg-red-600 shadow-lg h-14 flex flex-row justify-between items-center">
                 <marquee className="text-3xl bold">
-                    TOUS LES ETUDIANTS AYANT FAIT LEUR INSCRIPTION AVANT LE VENDREDI 05/02/2021 A 18H SONT PRIÉS DE LA RECOMMENCER. VEUILLEZ NOUS EXCUSER POUR LES DÉSAGRÉMENTS
+                    TOUS LES ETUDIANTS AYANT FAIT LEUR INSCRIPTION AVANT LE VENDREDI 05/02/2021 A 18H SONT PRIÉS DE LA RECOMMENCER. VEUILLEZ NOUS EXCUSER POUR LES DÉSAGRÉMENTS CAUSÉS.
                 </marquee>
             </div>
 

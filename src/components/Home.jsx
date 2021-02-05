@@ -22,7 +22,6 @@ import * as Yup from 'yup';
 import { phoneRegExp } from '../constants'
 
 import backPage from '../assets/imgs/backPage.jpg';
-import hexagon from '../assets/imgs/hexagon.webp'
 import coding from '../assets/imgs/coding.jpg'
 import bToB from '../assets/imgs/bToB.png'
 import ict_students from '../assets/imgs/ict_students.jpg'
@@ -114,7 +113,7 @@ export default function Home({ session, setSession }) {
                         onClick={() => {
                             if (session && session.email && session.email !== "" && session.profil === "prof") {
                                 window.location.pathname = "/espace_professionnel"
-                            } else if (session && session.email && session.email !== "" && session.profil === "etudiant"){
+                            } else if (session && session.email && session.email !== "" && session.profil === "etudiant") {
                                 setPopUpDeconnexion(true)
                             } else {
                                 setModalProf(true)
@@ -126,7 +125,7 @@ export default function Home({ session, setSession }) {
                         onClick={() => {
                             if (session && session.email && session.email !== "" && session.profil === "etudiant") {
                                 window.location.pathname = "/espace_etudiant"
-                            } else if (session && session.email && session.email !== "" && session.profil === "prof"){
+                            } else if (session && session.email && session.email !== "" && session.profil === "prof") {
                                 setPopUpDeconnexion(true)
                             } else {
                                 setModalStudent(true)
@@ -149,7 +148,7 @@ export default function Home({ session, setSession }) {
                 </div>
             </div>
 
-            <div className="grid" id="page" ref={scrollPageRef} style={{ backgroundImage: `url(${img5})`, backgroundBlendMode: "multiply", backgroundSize: "cover", backgroundRepeat:"no-repeat", backgroundAttachment: "fixed" }}>
+            <div className="grid" id="page" ref={scrollPageRef} style={{ backgroundImage: `url(${img5})`, backgroundBlendMode: "multiply", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundAttachment: "fixed" }}>
                 <div className="w-full bg-no-repeat" style={{ backgroundImage: `url(${backPage})`, backgroundBlendMode: "multiply", backgroundPosition: "center center", backgroundAttachment: "fixed" }}>
                     <div className="p-10 py-20 flex flex-col md:flex-row flex-wrap justify-evenly content-center text-white ">
 
@@ -165,6 +164,11 @@ export default function Home({ session, setSession }) {
                 </div>
 
 
+                <div className="bg-red-600 shadow-lg h-14 flex flex-row justify-between items-center">
+                    <marquee className="text-3xl bold">
+                        TOUS LES ETUDIANTS AYANT FAIT LEUR INSCRIPTION AVANT LE VENDREDI 05/02/2021 A 18H SONT PRIÉS DE LA RECOMMENCER. VEUILLEZ NOUS EXCUSER POUR LES DÉSAGRÉMENTS CAUSÉS.
+                    </marquee>
+                </div>
 
                 <div className="grid gap-4 w-full py-16">
 
@@ -268,6 +272,9 @@ export default function Home({ session, setSession }) {
 
 
 
+
+                
+
                 <div className="grid gap-4 w-full py-16">
 
                     <Fade>
@@ -286,43 +293,8 @@ export default function Home({ session, setSession }) {
 
 
 
-                {
-                    /*
-                <div className="grid gap-4 w-full py-16">
-
-                    <Fade>
-                        <h3 className="font-bold text-5xl text-blue-900 text-center mt-6 mb-12">La dernière édition en images</h3>
-                    </Fade>
-
-                    <div className="grid grid-cols-1 gap-y-6">
-
-                        <Swiper
-                            tag="section"
-                            wrapperTag="ul"
-                            navigation
-                            pagination
-                            spaceBetween={50}
-                            slidesPerView={3}
-                            onSlideChange={() => console.log('slide change')}
-                            onSwiper={(swiper) => console.log(swiper)}
-                        >
-                            {
-                                galleryImgs.map((img, ind) => (
-                                    <SwiperSlide key={`slide-${ind}`} tag="li">
-                                        <img src={img} alt={`slide-${ind}`}
-                                            style={{listStyle:"none"}}
-                                        />
-                                    </SwiperSlide>
-                                ))
-                            }
-                        </Swiper>
-
-                    </div>
 
 
-                </div>
-                    */
-                }
 
             </div>
 
@@ -355,8 +327,8 @@ export default function Home({ session, setSession }) {
                         </h3>
                     </p>
                 </Modal>
-            }            
-            
+            }
+
 
 
 
