@@ -432,7 +432,7 @@ export default function Home({ session, setSession }) {
                                         label="Adresse mail"
                                         name="email"
                                         type="email"
-                                        placeholder="sammy.bini@gmail.com"
+                                        placeholder="conseilestudiantinesatic@gmail.com"
                                     />
 
                                     <MyTextInput
@@ -556,7 +556,7 @@ export default function Home({ session, setSession }) {
                                         label="Adresse mail"
                                         name="email"
                                         type="email"
-                                        placeholder="sammy.bini@gmail.com"
+                                        placeholder="conseilestudiantinesatic@gmail.com"
                                     />
                                     <MyTextInput
                                         label="Mot de passe"
@@ -662,7 +662,7 @@ export default function Home({ session, setSession }) {
                                         label="E-mail"
                                         name="email"
                                         type="email"
-                                        placeholder="sammy.bini@gmail.com"
+                                        placeholder="conseilestudiantinesatic@gmail.com"
                                     />
                                     <MyTextInput
                                         label="Mot de passe"
@@ -921,7 +921,7 @@ export default function Home({ session, setSession }) {
                                         label="Adresse mail"
                                         name="email"
                                         type="email"
-                                        placeholder="sammy.bini@gmail.com"
+                                        placeholder="conseilestudiantinesatic@gmail.com"
                                     />
                                     <MyTextInput
                                         label="Mot de passe"

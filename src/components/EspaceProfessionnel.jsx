@@ -181,8 +181,6 @@ export default function EspaceProfessionnel({ session, setSession }) {
                             }}
 
                             validationSchema={Yup.object({
-                                raison_sociale: Yup.string(),
-                                interlocuteur: Yup.string(),
                                 contact: Yup.string()
                                     .matches(phoneRegExp, 'Le numéro de téléphone est invalide'),
                                 email: Yup.string()
@@ -209,7 +207,7 @@ export default function EspaceProfessionnel({ session, setSession }) {
                                             }
                                             console.log(session)    
                                             setErreur(false)
-                                            setSession(session)
+                                            window.localStorage.setItem("sdi_session", JSON.stringify(session))
                                             setModification(false)
                                         } else {
                                             setErreur(true)
@@ -249,7 +247,7 @@ export default function EspaceProfessionnel({ session, setSession }) {
                                     label="Adresse mail"
                                     name="email"
                                     type="email"
-                                    placeholder="sammy.bini@gmail.com"
+                                    placeholder="conseilestudiantinesatic@gmail.com"
                                 />
 
                                 <div className="flex justify-around">
