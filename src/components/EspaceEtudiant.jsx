@@ -102,12 +102,6 @@ export default function EspaceEtudiant({ session, setSession }) {
 
             <Navbar />
 
-            <div className="bg-red-600 shadow-lg h-14 flex flex-row justify-between items-center">
-                <marquee className="text-3xl bold">
-                    TOUS LES ETUDIANTS AYANT FAIT LEUR INSCRIPTION AVANT LE VENDREDI 05/02/2021 A 18H SONT PRIÉS DE LA RECOMMENCER. VEUILLEZ NOUS EXCUSER POUR LES DÉSAGRÉMENTS CAUSÉS.
-                </marquee>
-            </div>
-
             <div id="corps_espace_prof" className="bg-white bg-opacity-80 pb-10" style={{ minHeight: "calc(100vh - 5rem)" }}>
                 <h1 className="font-semibold lobster text-7xl ml-10 pt-8 text-gray-900">
                     Espace Etudiant
@@ -709,6 +703,10 @@ export default function EspaceEtudiant({ session, setSession }) {
                                 })
                                     .then(response => response.json())
                                     .then(response => {
+
+                                        console.log("Réponse JETIC");
+                                        console.log(response);
+
                                         if (response.success) {
                                             fetch(api_url + "/etudiant/UpdateEtudiant", {
                                                 "method": "POST",
