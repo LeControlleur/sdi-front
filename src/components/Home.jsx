@@ -173,7 +173,7 @@ export default function Home({ session, setSession }) {
 
                     <Zoom>
                         <p className="mx-10 md:mx-24 lg:mx-48 text-xl text-center">
-                            La <span className="text-blue-900 text-2xl font-bold">S</span>emaine <span className="text-blue-900 text-2xl font-bold">D</span>e l'<span className="text-blue-900 text-2xl font-bold">I</span>nnovation (<span className="text-blue-900 text-2xl font-bold">SDI</span>) est une semaine réservée à la valorisation des innovations ivoiriennes et internaltionales dans les Technologies de l'Information et de la Communication.
+                            La <span className="text-blue-900 text-2xl font-bold">S</span>emaine <span className="text-blue-900 text-2xl font-bold">D</span>e l'<span className="text-blue-900 text-2xl font-bold">I</span>nnovation (<span className="text-blue-900 text-2xl font-bold">SDI</span>) est une semaine réservée à la valorisation des innovations ivoiriennes et internationales dans les Technologies de l'Information et de la Communication.
                         </p>
                     </Zoom>
 
@@ -182,14 +182,14 @@ export default function Home({ session, setSession }) {
                             <Rotate top left>
                                 <div className="text-white bg-indigo-700 w-80 h-80 text-lg text-center flex items-center px-4 py-4 rounded-tl-full rounded-tr-full rounded-bl-full">
                                     <p>
-                                        <span className="font-bold text-2xl">Objectif 1</span><br />Concentrer les regards de la ville d'Abidjan voir de toute la Côte d'ivoire sur les TIC ainsi que sur l'ESATIC ses talentueux étudiants pendant une semaine
+                                        <span className="font-bold text-2xl">Objectif 1</span><br />Concentrer les regards de la ville d'Abidjan voir de toute la Côte d'ivoire sur les TIC ainsi que sur l'ESATIC et ses talentueux étudiants pendant une semaine
                                     </p>
                                 </div>
                             </Rotate>
                             <Rotate top right>
                                 <div className="text-white bg-blue-600 w-80 h-80 text-lg text-center flex items-center px-4 py-4 rounded-tl-full rounded-tr-full rounded-br-full mt-12 md:mt-0">
                                     <p>
-                                        <span className="font-bold text-2xl">Objectif 2</span><br /> Atteindre 1000 tapage participants (étudiants, lycéens, collégiens, professionnels du domaine des TIC, personnalités)
+                                        <span className="font-bold text-2xl">Objectif 2</span><br /> Atteindre 1000 participants (étudiants, lycéens, collégiens, professionnels du domaine des TIC, personnalités)
                                     </p>
                                 </div>
                             </Rotate>
@@ -278,7 +278,7 @@ export default function Home({ session, setSession }) {
 
                     <div className="grid grid-cols-1 gap-y-6">
                         <p className="font-semibold text-center text-blue-900">
-                            Nos gadgets seront disponible très prochainement
+                            Nos gadgets seront disponibles très prochainement
                         </p>
                     </div>
 
