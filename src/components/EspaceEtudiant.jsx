@@ -128,6 +128,7 @@ export default function EspaceEtudiant({ session, setSession }) {
                 <div className="flex justify-around md:w-7/12">
 
                     {
+                        /*
                         session.hack
                             ?
                             <button className="bg-gray-900 py-2 px-4 text-white" onClick={() => {
@@ -136,28 +137,31 @@ export default function EspaceEtudiant({ session, setSession }) {
                                 <span>Modification Hackathon</span>
                             </button>
                             :
-                            <button className="bg-gray-900 py-2 px-4 text-white" onClick={() => {
+                            <button className="bg-gray-900 py-2 px-4 text-white" onClick={(=> {
                                 setParticipationHack(true)
                             }}>
                                 <span>Inscription Hackathon</span>
                             </button>
+                        */
                     }
 
 
                     {
+                        /*
                         session.jetic
-                            ?
-                            <button className="bg-gray-900 py-2 px-4 text-white" onClick={() => {
-                                setShowParticipationJetic(true)
-                            }}>
-                                <span>Modification JETIC</span>
-                            </button>
-                            :
-                            <button className="bg-gray-900 py-2 px-4 text-white" onClick={() => {
-                                setParticipationJetic(true)
-                            }}>
-                                <span>Inscription JETIC</span>
-                            </button>
+                        ?
+                        <button className="bg-gray-900 py-2 px-4 text-white" onClick={() => {
+                            setShowParticipationJetic(true)
+                        }}>
+                            <span>Modification JETIC</span>
+                        </button>
+                        :
+                        <button className="bg-gray-900 py-2 px-4 text-white" onClick={() => {
+                            setParticipationJetic(true)
+                        }}>
+                            <span>Inscription JETIC</span>
+                        </button>
+                        */
                     }
 
                 </div>
@@ -847,10 +851,10 @@ export default function EspaceEtudiant({ session, setSession }) {
                                         "content-type": "application/json"
                                     },
                                     "body": JSON.stringify({
-                                        getParams : {
-                                            etudiant : session.identifiant
+                                        getParams: {
+                                            etudiant: session.identifiant
                                         },
-                                        setParams : values
+                                        setParams: values
                                     })
                                 })
                                     .then(response => response.json())
